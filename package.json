@@ -1,0 +1,15 @@
+{
+  "name": "revision",
+  "version": "1.0.0",
+  "description": "\"revision\"",
+  "main": "BasicProblems.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "\"rameshNagella\"",
+  "license": "ISC",
+  "dependencies": {
+    "node-fetch": "^3.3.2",
+    "node-geolocation": "^1.15.14"
+  }
+}
