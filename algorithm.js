@@ -11,7 +11,7 @@
 //Selection Sort
 
 // Merge Sort
-
+/*
 //Quick sort
 //quick sort is highly efficient and widely used sorting algorithm.
 //It is based on devide-conqure strategy, which involves beaking a problem into subproblems
@@ -21,7 +21,7 @@
 //  right side of elements to one subarray
 //sorted sub arrays are combined
 <<<<<<< HEAD
-/*
+
 =======
 
 >>>>>>> bfa2357c43a525283b06cbb4205f0cfd69fe7cff
@@ -68,6 +68,7 @@ function fibanocci(n) {
 console.log(fibanocci(5));
 console.log(fibanocci(10));
 <<<<<<< HEAD
-*/
+
 =======
 >>>>>>> bfa2357c43a525283b06cbb4205f0cfd69fe7cff
+*/

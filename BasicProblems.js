@@ -219,7 +219,8 @@ const arrayMap = [1, 2, 3, 4, 5];
 
 console.log(arrayMap.map((el) => el / 2));
 
-//
+///
+/*
 
 //code for printinf natuaral numbers
 
@@ -443,3 +444,4 @@ printIncStars(3); //*  *
 // printIncStars(5); //*  *
 =======
 >>>>>>> bfa2357c43a525283b06cbb4205f0cfd69fe7cff
+*/
