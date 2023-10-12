@@ -306,7 +306,134 @@ function isPrime1(num) {
   }
   return "it is a prime";
 }
+
 console.log(isPrime1(1));
 console.log(isPrime1(7));
 console.log(isPrime1(65));
 console.log(isPrime1(25));
+
+// finding number is a primeNumber
+
+function isPrime2(num) {
+  if (num <= 1) {
+    return "cannot find";
+  }
+  if (num <= 3) {
+    return "The number is a prime number";
+  }
+  if (num % 2 === 0 || num % 3 === 0) {
+    return "Number is not a prime";
+  }
+  for (let i = 5; i * i <= num; i += 6) {
+    if (num % i === 0 || num % (i + 2) === 0) return "Not a prime Number";
+  }
+  return "NUmber in prime";
+}
+console.log(isPrime2(2));
+console.log(">>", isPrime2(5));
+console.log(isPrime2(10));
+console.log(isPrime2(9));
+console.log(isPrime2(25));
+
+//write a code for finding the expoenential
+
+function expoenential(b, n) {
+  result = b ** n;
+  console.log(result);
+  return result;
+}
+console.log(expoenential(2, 2));
+
+//write a code for finding pow(e,n)
+
+function findExpPow(num) {
+  let result = Math.exp(num);
+  return result;
+}
+console.log(findExpPow(1));
+
+//finding the value of e^e^2
+
+// function recursiveExp(n) {
+//   let result = Math.exp(n);
+//   let final = result;
+//   return result * recursiveExp(n - 1);
+// }
+// console.log(recursiveExp(2));
+//will not work
+
+function recursiveExp(n) {
+  let e = Math.E;
+  let power = Math.exp(Math.pow(e, 2));
+  console.log(power);
+  return power;
+}
+console.log(recursiveExp(2));
+
+function recursiveExpforNtimes(base, n) {
+  if (n === 0) return 1;
+  if (n > 0) return base * recursiveExpforNtimes(base, n - 1);
+  else return 1 / recursiveExpforNtimes(base, -n);
+}
+console.log(recursiveExpforNtimes(Math.E, 2));
+console.log(Math.E * Math.E);
+console.log(recursiveExpforNtimes(3, 4));
+
+function expRecursive(n) {
+  if (n <= 0) {
+    return 1;
+  }
+  let e = Math.E;
+  let result = Math.pow(e, expRecursive(n - 1));
+  // console.log(result);
+  return result;
+}
+// console.log(expRecursive("1>> ", 1));//RangeError: Maximum call stack size exceeded
+console.log("2>>>>>", expRecursive(2));
+console.log(expRecursive(3));
+
+// e^expRecursive(2)
+//e^e^expRecursive(1)
+//e^e^e
+
+//print factiorial of given number
+
+function findFactiorial(n) {
+  if (n <= 0) return 1;
+  return n * findFactiorial(n - 1);
+}
+console.log(findFactiorial(4));
+console.log(findFactiorial(7));
+
+//print fibanocci series
+function findFibanocci(n) {
+  if (n <= 0) return 1;
+  let fibArray = [0, 1];
+  for (let i = 2; i < n; i++) {
+    fibArray[i] = fibArray[i - 1] + fibArray[i - 2];
+  }
+  return fibArray.slice(0, n);
+}
+console.log(findFibanocci(10));
+const fibanocciSeries = findFibanocci(9);
+console.log(...fibanocciSeries);
+
+// 0 1 1 2 3 5 8 13 21 ...
+
+//write a code for print the * like below
+//  *
+//*   *
+//and so on for 4 lines
+
+function printIncStars(rows) {
+  for (let i = 1; i <= rows; i++) {
+    let row = "";
+    for (let j = 1; j < i; j++) {
+      row += " * ";
+    }
+    console.log(row);
+  }
+}
+// printIncStars(2); //*  *
+printIncStars(3); //*  *
+// printIncStars(5); //*  *

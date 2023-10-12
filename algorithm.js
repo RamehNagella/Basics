@@ -20,7 +20,7 @@
 //  left side of elements pivote to one subarray
 //  right side of elements to one subarray
 //sorted sub arrays are combined
-
+/*
 function quickSort(arr) {
   console.log(arr);
   if (arr.length <= 1) {
@@ -63,3 +63,4 @@ function fibanocci(n) {
 
 console.log(fibanocci(5));
 console.log(fibanocci(10));
+*/
