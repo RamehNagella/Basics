@@ -306,11 +306,15 @@ function isPrime1(num) {
   }
   return "it is a prime";
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> bfa2357c43a525283b06cbb4205f0cfd69fe7cff
 console.log(isPrime1(1));
 console.log(isPrime1(7));
 console.log(isPrime1(65));
 console.log(isPrime1(25));
+<<<<<<< HEAD
 
 // finding number is a primeNumber
 
@@ -437,3 +441,5 @@ function printIncStars(rows) {
 // printIncStars(2); //*  *
 printIncStars(3); //*  *
 // printIncStars(5); //*  *
+=======
+>>>>>>> bfa2357c43a525283b06cbb4205f0cfd69fe7cff
