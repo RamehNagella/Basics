@@ -2,7 +2,7 @@
 const add = (a, b) => a + b;
 
 //adding array of elemetns
-
+/*
 const sumArr = (arr) => {
   let sum = 0;
   for (let i = 0; i <= arr.length - 1; i++) {
@@ -443,3 +443,33 @@ printIncStars(3); //*  *
 // printIncStars(5); //*  *
 =======
 >>>>>>> bfa2357c43a525283b06cbb4205f0cfd69fe7cff
+
+
+*/
+
+function findAttackDay(testCases) {
+  let results = [];
+
+  for (let testCase of testCases) {
+    let temperatures = testCase.temperatures;
+    temperatures.sort((a, b) => a - b);
+
+    let secondColdestDay = temperatures[1];
+    results.push(secondColdestDay);
+  }
+
+  return results;
+}
+
+const testCases = [
+  { temperatures: [1, 2] },
+  { temperatures: [7, 4, 9] },
+  { temperatures: [45, 76, 91, 21, 9] }
+  // Add more test cases if needed
+];
+
+const results = findAttackDay(testCases);
+
+for (let i = 0; i < results.length; i++) {
+  console.log(`Test Case ${i + 1}: ${results[i]}`);
+}
